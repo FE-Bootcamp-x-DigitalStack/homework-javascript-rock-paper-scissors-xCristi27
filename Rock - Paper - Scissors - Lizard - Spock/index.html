@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPSLS</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"
+    />
+  </head>
+  <body>
+    <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
+
+    <div class="choices">
+      <button class="far fa-hand-rock" onclick="playGame('rock')">Rock</button>
+      <button class="far fa-hand-paper" onclick="playGame('paper')">
+        Paper
+      </button>
+      <button class="far fa-hand-scissors" onclick="playGame('scissors')">
+        Scissors
+      </button>
+      <button class="far fa-hand-lizard" onclick="playGame('lizard')">
+        Lizard
+      </button>
+      <button class="far fa-hand-spock" onclick="playGame('spock')">
+        Spock
+      </button>
+    </div>
+
+    <div id="playerDisplay">PLAYER:</div>
+    <div id="computerDisplay">COMPUTER:</div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">
+      Player Score:
+      <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">
+      Computer Score:
+      <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
